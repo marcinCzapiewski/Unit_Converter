@@ -360,6 +360,7 @@ public class WeightConverter {
     double hundredweightUKToHundredweightUS(double value) {
         return value * 1.1199999903;
     }
+
     double hundredweightUKToHundredweightUK(double value) {
         return value;
     }

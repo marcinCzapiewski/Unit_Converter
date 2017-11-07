@@ -43,7 +43,7 @@ public class ControlPanel {
                         convertOunces(weightConverter, outputUnit, value);
                         break;
                     case 6:
-                        convertCarats(weightConverter, outputUnit , value);
+                        convertCarats(weightConverter, outputUnit, value);
                         break;
                     case 7:
                         convertGrains(weightConverter, outputUnit, value);
@@ -57,21 +57,8 @@ public class ControlPanel {
                     case 10:
                         convertTones(weightConverter, outputUnit, value);
                         break;
-                    }
-
+                }
             case 2:
-                //convertArea();
-                break;
-            case 3:
-                //convertLength();
-                break;
-            case 4:
-                //convertVolume();
-                break;
-            case 5:
-                //convertTime();
-                break;
-            case 6:
                 System.exit(0);
         }
 
@@ -116,34 +103,34 @@ public class ControlPanel {
     private static void convertGrams(WeightConverter weightConverter, int m, double value) {
         switch (m) {
             case 1:
-                weightConverter.gramsToGrams(value);
+                setResult(weightConverter.gramsToGrams(value));
                 break;
             case 2:
-                weightConverter.gramsToDecagrams(value);
+                setResult(weightConverter.gramsToDecagrams(value));
                 break;
             case 3:
-                weightConverter.gramsToKilograms(value);
+                setResult(weightConverter.gramsToKilograms(value));
                 break;
             case 4:
-                weightConverter.gramsToPounds(value);
+                setResult(weightConverter.gramsToPounds(value));
                 break;
             case 5:
-                weightConverter.gramsToOunces(value);
+                setResult(weightConverter.gramsToOunces(value));
                 break;
             case 6:
-                weightConverter.gramsToCarats(value);
+                setResult(weightConverter.gramsToCarats(value));
                 break;
             case 7:
-                weightConverter.gramsToGrain(value);
+                setResult(weightConverter.gramsToGrain(value));
                 break;
             case 8:
-                weightConverter.gramsToHundredweightUS(value);
+                setResult(weightConverter.gramsToHundredweightUS(value));
                 break;
             case 9:
-                weightConverter.gramsToHundredweightUK(value);
+                setResult(weightConverter.gramsToHundredweightUK(value));
                 break;
             case 10:
-                weightConverter.gramsToTones(value);
+                setResult(weightConverter.gramsToTones(value));
                 break;
         }
     }
@@ -151,34 +138,34 @@ public class ControlPanel {
     private static void convertKilograms(WeightConverter weightConverter, int m, double value) {
         switch (m) {
             case 1:
-                weightConverter.kilogramsToGrams(value);
+                setResult(weightConverter.kilogramsToGrams(value));
                 break;
             case 2:
-                weightConverter.kilogramsToDecagrams(value);
+                setResult(weightConverter.kilogramsToDecagrams(value));
                 break;
             case 3:
-                weightConverter.kilogramsToKilograms(value);
+                setResult(weightConverter.kilogramsToKilograms(value));
                 break;
             case 4:
-                weightConverter.kilogramsToPounds(value);
+                setResult(weightConverter.kilogramsToPounds(value));
                 break;
             case 5:
-                weightConverter.kilogramsToOunces(value);
+                setResult(weightConverter.kilogramsToOunces(value));
                 break;
             case 6:
-                weightConverter.kilogramsToCarats(value);
+                setResult(weightConverter.kilogramsToCarats(value));
                 break;
             case 7:
-                weightConverter.kilogramsToGrain(value);
+                setResult(weightConverter.kilogramsToGrain(value));
                 break;
             case 8:
-                weightConverter.kilogramsToHundredweightUS(value);
+                setResult(weightConverter.kilogramsToHundredweightUS(value));
                 break;
             case 9:
-                weightConverter.kilogramsToHundredweightUK(value);
+                setResult(weightConverter.kilogramsToHundredweightUK(value));
                 break;
             case 10:
-                weightConverter.kilogramsToTones(value);
+                setResult(weightConverter.kilogramsToTones(value));
                 break;
         }
     }
@@ -186,34 +173,34 @@ public class ControlPanel {
     private static void convertPounds(WeightConverter weightConverter, int m, double value) {
         switch (m) {
             case 1:
-                weightConverter.poundsToGrams(value);
+                setResult(weightConverter.poundsToGrams(value));
                 break;
             case 2:
-                weightConverter.poundsToDecagrams(value);
+                setResult(weightConverter.poundsToDecagrams(value));
                 break;
             case 3:
-                weightConverter.poundsToKilograms(value);
+                setResult(weightConverter.poundsToKilograms(value));
                 break;
             case 4:
-                weightConverter.poundsToPounds(value);
+                setResult(weightConverter.poundsToPounds(value));
                 break;
             case 5:
-                weightConverter.poundsToOunces(value);
+                setResult(weightConverter.poundsToOunces(value));
                 break;
             case 6:
-                weightConverter.poundsToCarats(value);
+                setResult(weightConverter.poundsToCarats(value));
                 break;
             case 7:
-                weightConverter.poundsToGrain(value);
+                setResult(weightConverter.poundsToGrain(value));
                 break;
             case 8:
-                weightConverter.poundsToHundredweightUS(value);
+                setResult(weightConverter.poundsToHundredweightUS(value));
                 break;
             case 9:
-                weightConverter.poundsToHundredweightUK(value);
+                setResult(weightConverter.poundsToHundredweightUK(value));
                 break;
             case 10:
-                weightConverter.poundsToTones(value);
+                setResult(weightConverter.poundsToTones(value));
                 break;
         }
     }
@@ -221,34 +208,34 @@ public class ControlPanel {
     private static void convertOunces(WeightConverter weightConverter, int m, double value) {
         switch (m) {
             case 1:
-                weightConverter.ouncesToGrams(value);
+                setResult(weightConverter.ouncesToGrams(value));
                 break;
             case 2:
-                weightConverter.ouncesToDecagrams(value);
+                setResult(weightConverter.ouncesToDecagrams(value));
                 break;
             case 3:
-                weightConverter.ouncesToKilograms(value);
+                setResult(weightConverter.ouncesToKilograms(value));
                 break;
             case 4:
-                weightConverter.ouncesToPounds(value);
+                setResult(weightConverter.ouncesToPounds(value));
                 break;
             case 5:
-                weightConverter.ouncesToOunces(value);
+                setResult(weightConverter.ouncesToOunces(value));
                 break;
             case 6:
-                weightConverter.ouncesToCarats(value);
+                setResult(weightConverter.ouncesToCarats(value));
                 break;
             case 7:
-                weightConverter.ouncesToGrain(value);
+                setResult(weightConverter.ouncesToGrain(value));
                 break;
             case 8:
-                weightConverter.ouncesToHundredweightUS(value);
+                setResult(weightConverter.ouncesToHundredweightUS(value));
                 break;
             case 9:
-                weightConverter.ouncesToHundredweightUK(value);
+                setResult(weightConverter.ouncesToHundredweightUK(value));
                 break;
             case 10:
-                weightConverter.ouncesToTones(value);
+                setResult(weightConverter.ouncesToTones(value));
                 break;
         }
     }
@@ -256,34 +243,34 @@ public class ControlPanel {
     private static void convertCarats(WeightConverter weightConverter, int m, double value) {
         switch (m) {
             case 1:
-                weightConverter.caratsToGrams(value);
+                setResult(weightConverter.caratsToGrams(value));
                 break;
             case 2:
-                weightConverter.caratsToDecagrams(value);
+                setResult(weightConverter.caratsToDecagrams(value));
                 break;
             case 3:
-                weightConverter.caratsToKilograms(value);
+                setResult(weightConverter.caratsToKilograms(value));
                 break;
             case 4:
-                weightConverter.caratsToPounds(value);
+                setResult(weightConverter.caratsToPounds(value));
                 break;
             case 5:
-                weightConverter.caratsToOunces(value);
+                setResult(weightConverter.caratsToOunces(value));
                 break;
             case 6:
-                weightConverter.caratsToCarats(value);
+                setResult(weightConverter.caratsToCarats(value));
                 break;
             case 7:
-                weightConverter.caratsToGrain(value);
+                setResult(weightConverter.caratsToGrain(value));
                 break;
             case 8:
-                weightConverter.caratsToHundredweightUS(value);
+                setResult(weightConverter.caratsToHundredweightUS(value));
                 break;
             case 9:
-                weightConverter.caratsToHundredweightUK(value);
+                setResult(weightConverter.caratsToHundredweightUK(value));
                 break;
             case 10:
-                weightConverter.caratsToTones(value);
+                setResult(weightConverter.caratsToTones(value));
                 break;
         }
     }
@@ -291,34 +278,34 @@ public class ControlPanel {
     private static void convertGrains(WeightConverter weightConverter, int m, double value) {
         switch (m) {
             case 1:
-                weightConverter.grainsToGrams(value);
+                setResult(weightConverter.grainsToGrams(value));
                 break;
             case 2:
-                weightConverter.grainsToDecagrams(value);
+                setResult(weightConverter.grainsToDecagrams(value));
                 break;
             case 3:
-                weightConverter.grainsToKilograms(value);
+                setResult(weightConverter.grainsToKilograms(value));
                 break;
             case 4:
-                weightConverter.grainsToPounds(value);
+                setResult(weightConverter.grainsToPounds(value));
                 break;
             case 5:
-                weightConverter.grainsToOunces(value);
+                setResult(weightConverter.grainsToOunces(value));
                 break;
             case 6:
-                weightConverter.grainsToCarats(value);
+                setResult(weightConverter.grainsToCarats(value));
                 break;
             case 7:
-                weightConverter.grainsToGrain(value);
+                setResult(weightConverter.grainsToGrain(value));
                 break;
             case 8:
-                weightConverter.grainsToHundredweightUS(value);
+                setResult(weightConverter.grainsToHundredweightUS(value));
                 break;
             case 9:
-                weightConverter.grainsToHundredweightUK(value);
+                setResult(weightConverter.grainsToHundredweightUK(value));
                 break;
             case 10:
-                weightConverter.grainsToTones(value);
+                setResult(weightConverter.grainsToTones(value));
                 break;
         }
     }
@@ -326,34 +313,34 @@ public class ControlPanel {
     private static void convertHundredweightUS(WeightConverter weightConverter, int m, double value) {
         switch (m) {
             case 1:
-                weightConverter.hundredweightUSToGrams(value);
+                setResult(weightConverter.hundredweightUSToGrams(value));
                 break;
             case 2:
-                weightConverter.hundredweightUSToDecagrams(value);
+                setResult(weightConverter.hundredweightUSToDecagrams(value));
                 break;
             case 3:
-                weightConverter.hundredweightUSToKilograms(value);
+                setResult(weightConverter.hundredweightUSToKilograms(value));
                 break;
             case 4:
-                weightConverter.hundredweightUSToPounds(value);
+                setResult(weightConverter.hundredweightUSToPounds(value));
                 break;
             case 5:
-                weightConverter.hundredweightUSToOunces(value);
+                setResult(weightConverter.hundredweightUSToOunces(value));
                 break;
             case 6:
-                weightConverter.hundredweightUSToCarats(value);
+                setResult(weightConverter.hundredweightUSToCarats(value));
                 break;
             case 7:
-                weightConverter.hundredweightUSToGrain(value);
+                setResult(weightConverter.hundredweightUSToGrain(value));
                 break;
             case 8:
-                weightConverter.hundredweightUSTohundredweightUS(value);
+                setResult(weightConverter.hundredweightUSTohundredweightUS(value));
                 break;
             case 9:
-                weightConverter.hundredweightUSToHundredweightUK(value);
+                setResult(weightConverter.hundredweightUSToHundredweightUK(value));
                 break;
             case 10:
-                weightConverter.hundredweightUSToTones(value);
+                setResult(weightConverter.hundredweightUSToTones(value));
                 break;
         }
     }
@@ -361,34 +348,34 @@ public class ControlPanel {
     private static void convertHundredweightUK(WeightConverter weightConverter, int m, double value) {
         switch (m) {
             case 1:
-                weightConverter.hundredweightUKToGrams(value);
+                setResult(weightConverter.hundredweightUKToGrams(value));
                 break;
             case 2:
-                weightConverter.hundredweightUKToDecagrams(value);
+                setResult(weightConverter.hundredweightUKToDecagrams(value));
                 break;
             case 3:
-                weightConverter.hundredweightUKToKilograms(value);
+                setResult(weightConverter.hundredweightUKToKilograms(value));
                 break;
             case 4:
-                weightConverter.hundredweightUKToPounds(value);
+                setResult(weightConverter.hundredweightUKToPounds(value));
                 break;
             case 5:
-                weightConverter.hundredweightUKToOunces(value);
+                setResult(weightConverter.hundredweightUKToOunces(value));
                 break;
             case 6:
-                weightConverter.hundredweightUKToCarats(value);
+                setResult(weightConverter.hundredweightUKToCarats(value));
                 break;
             case 7:
-                weightConverter.hundredweightUKToGrain(value);
+                setResult(weightConverter.hundredweightUKToGrain(value));
                 break;
             case 8:
-                weightConverter.hundredweightUKToHundredweightUS(value);
+                setResult(weightConverter.hundredweightUKToHundredweightUS(value));
                 break;
             case 9:
-                weightConverter.hundredweightUKToHundredweightUK(value);
+                setResult(weightConverter.hundredweightUKToHundredweightUK(value));
                 break;
             case 10:
-                weightConverter.hundredweightUKToTones(value);
+                setResult(weightConverter.hundredweightUKToTones(value));
                 break;
         }
     }
@@ -396,34 +383,34 @@ public class ControlPanel {
     private static void convertTones(WeightConverter weightConverter, int m, double value) {
         switch (m) {
             case 1:
-                weightConverter.tonsToGrams(value);
+                setResult(weightConverter.tonsToGrams(value));
                 break;
             case 2:
-                weightConverter.tonsToDecagrams(value);
+                setResult(weightConverter.tonsToDecagrams(value));
                 break;
             case 3:
-                weightConverter.tonsToKilograms(value);
+                setResult(weightConverter.tonsToKilograms(value));
                 break;
             case 4:
-                weightConverter.tonsToPounds(value);
+                setResult(weightConverter.tonsToPounds(value));
                 break;
             case 5:
-                weightConverter.tonsToOunces(value);
+                setResult(weightConverter.tonsToOunces(value));
                 break;
             case 6:
-                weightConverter.tonsToCarats(value);
+                setResult(weightConverter.tonsToCarats(value));
                 break;
             case 7:
-                weightConverter.tonsToGrain(value);
+                setResult(weightConverter.tonsToGrain(value));
                 break;
             case 8:
-                weightConverter.tonsToHundredweightUS(value);
+                setResult(weightConverter.tonsToHundredweightUS(value));
                 break;
             case 9:
-                weightConverter.tonsToHundredweightUK(value);
+                setResult(weightConverter.tonsToHundredweightUK(value));
                 break;
             case 10:
-                weightConverter.tonsToTons(value);
+                setResult(weightConverter.tonsToTons(value));
                 break;
         }
     }

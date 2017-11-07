@@ -6,11 +6,7 @@ class ControlPanelDrawer {
         System.out.println("\nHello to unit converter. Which type of unit would you like to convert? Enter a number " +
                 "to choose.\n" +
                 "1. Weight\n" +
-                "2. Area\n" +
-                "3. Length\n" +
-                "4. Volume\n" +
-                "5. Time\n" +
-                "6. I want to exit.");
+                "2. I want to exit.");
     }
 
     static void drawFirstWeightControlPanel() {
